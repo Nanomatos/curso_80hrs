@@ -2,13 +2,13 @@ from datetime import datetime
 
 def mostrar_menu():
     # Obtener la hora actual
-    hora_actual = datetime.now().hour  # Usamos datetime directamente
+    hora_actual = datetime.now().hour  # Usamos datetime directamente determina la hora actual
 
     # Comprobamos las horas para determinar el momento del día
     if 6 <= hora_actual < 11:
         print("¡A desayunar! 🥐")
-        print("1) Huevos revueltosn\n2) Pan con mermelada\n3) Avena con fruta")
-        op = int(input("¿Qué opción eliges?: "))
+        print("1) Huevos revueltosn\n2) Pan con mermelada\n3) Avena con fruta") #El simbolo \n es para salto de linea y las opciones se muestren una debajo de otra
+        op = int(input("¿Qué opción eliges?: ")) # Debe colocar la opción que prefiera 
         if op == 1:
             print("¡Huevitos revueltos! Buen desayuno 💪")
         elif op == 2:
@@ -44,7 +44,6 @@ def mostrar_menu():
         else:
             print("Opción no válida 😕")
     
-    # CENA
     elif 19 <= hora_actual < 22:
         print("¡Hora de la cena! 🍽")
         print("1) Sopa ligera\n2) Ensalada\n3) Tortilla española")
@@ -62,5 +61,4 @@ def mostrar_menu():
     else:
         print("No es hora de comer ahora 😴")
 
-# Ejecutar el menú
 mostrar_menu()
