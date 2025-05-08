@@ -1,0 +1,23 @@
+Peliculas_vectores = ["Matrix", "Scary_Movie", "El_Padrino", "Shrek", "Rapidos_y_Furiosos", "Rocky", "Matanza_de_texas", "El_exorcismo", "El_gato_con_botas", "Cenicienta", "Jason"]
+
+Genero_peliculas = ["accion", "comedia", "ciencia ficcion", "drama", "suspenso", "infantil", "animacion", "terror"]
+
+Matrix = ["accion", "ciencia ficcion", "drama"]
+Scary_Movie = ["comedia", "accion"]
+El_Padrino = ["drama", "accion" ]
+Shrek = ["animacion", "infantil", "comedia"]
+Rapidos_y_Furiosos = ["accion", "ciencia ficcion"]
+Rocky = ["drama", "accion"]
+Matanza_de_texas= ["terror", "suspenso"]
+El_exorcismo = ["terror", "suspenso"]
+El_gato_con_botas = ["infantil", "animacion", "comedia"]
+Cenicienta = ["animacion", "infantil"]
+Jason = ["terror", "suspenso"]
+
+print(input("Elige pelicula 1?  "))
+print(input("Elige pelicula 2?  "))
+
+similitud = sum([1 for word in Peliculas_vectores if word in Genero_peliculas])
+
+print(f"La similitud de las peliculas es {similitud}")
+#Comentario para guardar cambios
